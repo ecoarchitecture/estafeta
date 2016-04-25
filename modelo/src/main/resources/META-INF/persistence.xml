@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+  <persistence-unit name="testing-h2" transaction-type="RESOURCE_LOCAL">
+    <description>Persistence using a built-in memory-only H2 (Hyperion) database</description>
+
+<!--  class>com.estafeta.contenedor.modelo.Contenedor</class>
+<class>com.estafeta.contenedor.modelo.EstatusContenedor</class>
+<class>com.estafeta.contenedor.modelo.HistoricoEstatusContenedor</class>
+<class>com.estafeta.contenedor.modelo.ItenerarioContenedor</class>
+<class>com.estafeta.contenedor.modelo.TipoContenedor</class>
+
+<class>com.estafeta.item.modelo.Anden</class>
+<class>com.estafeta.item.modelo.Asentamiento</class>-->
+<class>com.estafeta.item.modelo.Cliente</class>
+<class>com.estafeta.item.modelo.Contrato</class>
+<!-- 
+<class>com.estafeta.item.modelo.ContratoServicio</class>
+<class>com.estafeta.item.modelo.Detenido</class>
+<class>com.estafeta.item.modelo.Direccion</class>
+<class>com.estafeta.item.modelo.Edificio</class>
+<class>com.estafeta.item.modelo.EnMovimiento</class>
+<class>com.estafeta.item.modelo.Envio</class>
+<class>com.estafeta.item.modelo.Estado</class>
+<class>com.estafeta.item.modelo.EstatusEnvio</class>
+<class>com.estafeta.item.modelo.EstatusItem</class>
+<class>com.estafeta.item.modelo.EstatusSolicitudServicio</class>
+<class>com.estafeta.item.modelo.FolioGuiaAsignado</class>
+<class>com.estafeta.item.modelo.GarantiaTiempoEntrega</class>
+<class>com.estafeta.item.modelo.HistoricoEstatusEnvio</class>
+<class>com.estafeta.item.modelo.HistoricoEstatusItem</class>
+<class>com.estafeta.item.modelo.HistoricoEstatusSolicituServicio</class>
+<class>com.estafeta.item.modelo.Item</class>
+<class>com.estafeta.item.modelo.ItenerarioEnvio</class>
+<class>com.estafeta.item.modelo.Localidad</class>
+<class>com.estafeta.item.modelo.ModalidadPago</class>
+<class>com.estafeta.item.modelo.Municipio</class>
+<class>com.estafeta.item.modelo.Plaza</class>
+<class>com.estafeta.item.modelo.Producto</class>
+<class>com.estafeta.item.modelo.Recoleccion</class>
+<class>com.estafeta.item.modelo.Seguro</class>
+<class>com.estafeta.item.modelo.Servicio</class>
+<class>com.estafeta.item.modelo.ServicioAdicional</class>
+<class>com.estafeta.item.modelo.SolicitudServicio</class>
+<class>com.estafeta.item.modelo.TipoAnden</class>
+<class>com.estafeta.item.modelo.TipoAsentamiento</class>
+<class>com.estafeta.item.modelo.TipoContrato</class>
+<class>com.estafeta.item.modelo.TipoEdificio</class>
+<class>com.estafeta.item.modelo.TipoEnvoltura</class>
+<class>com.estafeta.item.modelo.TipoVialidad</class>
+<class>com.estafeta.unidadTransporte.modelo.AsignacionItinerarioRuta</class>
+<class>com.estafeta.unidadTransporte.modelo.Camino</class>
+<class>com.estafeta.unidadTransporte.modelo.CaminoEscala</class>
+<class>com.estafeta.unidadTransporte.modelo.Escala</class>
+<class>com.estafeta.unidadTransporte.modelo.EstatusAsignacionItinerarioRuta</class>
+<class>com.estafeta.unidadTransporte.modelo.EstatusUnidadTransporte</class>
+<class>com.estafeta.unidadTransporte.modelo.HistoricoEstatusAsignacionItinerarioRuta</class>
+<class>com.estafeta.unidadTransporte.modelo.HistoricoEstatusUnidadTransporte</class>
+<class>com.estafeta.unidadTransporte.modelo.ItinerarioAsignacionRuta</class>
+<class>com.estafeta.unidadTransporte.modelo.ItinerarioRuta</class>
+<class>com.estafeta.unidadTransporte.modelo.Marca</class>
+<class>com.estafeta.unidadTransporte.modelo.Modelo</class>
+<class>com.estafeta.unidadTransporte.modelo.Ruta</class>
+<class>com.estafeta.unidadTransporte.modelo.SubEstatusAsignacionItinerarioRuta</class>
+<class>com.estafeta.unidadTransporte.modelo.SubEstatusUnidadTransporte</class>
+<class>com.estafeta.unidadTransporte.modelo.SubtipoUnidadTransporte</class>
+<class>com.estafeta.unidadTransporte.modelo.SubtipoUnidadTrasnporte</class>
+<class>com.estafeta.unidadTransporte.modelo.TipoUnidadTransporte</class>
+<class>com.estafeta.unidadTransporte.modelo.UnidadTransporte</class>
+
+ -->
+
+    
+    <exclude-unlisted-classes>true</exclude-unlisted-classes>
+    <validation-mode>AUTO</validation-mode>
+    <properties>
+      <property name="hibernate.dialect" value="org.hibernate.dialect.H2Dialect"/>
+      <property name="hibernate.connection.driver_class" value="org.h2.Driver"/>
+      <property name="hibernate.hbm2ddl.auto" value="create-drop"/>
+      <property name="javax.persistence.jdbc.url" value="jdbc:h2:mem:test;DB_CLOSE_DELAY=-1"/>
+    </properties>
+  </persistence-unit>
+  <!--  persistence-unit name="testing-psql" transaction-type="RESOURCE_LOCAL">
+    <description>Persistence using my (production) PostgreSQL local database</description>
+    <class>foo</class>
+    <class>experimental</class>
+    <exclude-unlisted-classes>true</exclude-unlisted-classes>
+    <validation-mode>AUTO</validation-mode>
+    <properties>
+      <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect"/>
+      <property name="hibernate.connection.driver_class" value="org.postgresql.Driver"/>
+      <property name="hibernate.hbm2ddl.auto" value="create-drop"/>
+      <property name="hibernate.temp.use_jdbc_metadata_defaults" value="false"/>
+      <property name="javax.persistence.jdbc.url" value="jdbc:postgresql:testing"/>
+      <property name="javax.persistence.jdbc.user" value="me"/>
+      <property name="javax.persistence.jdbc.password" value="sdfsdf9"/>
+    </properties>
+  </persistence-unit>-->
+</persistence>
