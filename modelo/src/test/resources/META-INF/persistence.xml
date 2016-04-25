@@ -41,16 +41,14 @@
 <class>com.estafeta.item.modelo.EstatusSolicitudServicio</class>
 <class>com.estafeta.item.modelo.Detenido</class>
 <class>com.estafeta.item.modelo.EnMovimiento</class>
-
-
-<!--  class>com.estafeta.contenedor.modelo.Contenedor</class>
+<class>com.estafeta.contenedor.modelo.Contenedor</class>
 <class>com.estafeta.contenedor.modelo.EstatusContenedor</class>
 <class>com.estafeta.contenedor.modelo.HistoricoEstatusContenedor</class>
 <class>com.estafeta.contenedor.modelo.ItenerarioContenedor</class>
 <class>com.estafeta.contenedor.modelo.TipoContenedor</class>
 
 
--->
+
 
 
 <!-- 
