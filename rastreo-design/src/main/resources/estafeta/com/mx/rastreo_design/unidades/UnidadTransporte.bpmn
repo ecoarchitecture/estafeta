@@ -127,9 +127,9 @@
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="BPMNShape_ReceiveTask_2" bpmnElement="ReceiveTask_2">
-        <dc:Bounds height="50.0" width="110.0" x="489.0" y="276.0"/>
+        <dc:Bounds height="50.0" width="110.0" x="489.0" y="350.0"/>
         <bpmndi:BPMNLabel id="BPMNLabel_4" labelStyle="BPMNLabelStyle_1">
-          <dc:Bounds height="15.0" width="101.0" x="493.0" y="293.0"/>
+          <dc:Bounds height="15.0" width="101.0" x="493.0" y="367.0"/>
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="BPMNShape_ReceiveTask_3" bpmnElement="ReceiveTask_3">
@@ -205,8 +205,8 @@
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="BPMNEdge_SequenceFlow_4" bpmnElement="SequenceFlow_4" sourceElement="BPMNShape_ReceiveTask_2" targetElement="BPMNShape_InclusiveGateway_1">
-        <di:waypoint xsi:type="dc:Point" x="599.0" y="301.0"/>
-        <di:waypoint xsi:type="dc:Point" x="636.0" y="301.0"/>
+        <di:waypoint xsi:type="dc:Point" x="599.0" y="375.0"/>
+        <di:waypoint xsi:type="dc:Point" x="636.0" y="375.0"/>
         <di:waypoint xsi:type="dc:Point" x="636.0" y="301.0"/>
         <di:waypoint xsi:type="dc:Point" x="694.0" y="301.0"/>
         <bpmndi:BPMNLabel id="BPMNLabel_12"/>
