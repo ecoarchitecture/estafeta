@@ -104,7 +104,7 @@
       <bpmn2:outgoing>SequenceFlow_2</bpmn2:outgoing>
       <bpmn2:messageEventDefinition id="MessageEventDefinition_1"/>
     </bpmn2:intermediateCatchEvent>
-    <bpmn2:sequenceFlow id="SequenceFlow_1" drools:priority="1" name="No, Abrir unidad de transporte" sourceRef="_377AD866-AC66-4BE7-8E92-BB143222A2A9" targetRef="IntermediateCatchEvent_1"/>
+    <bpmn2:sequenceFlow id="SequenceFlow_1" drools:priority="1" name="No, Abrir unidad de transporte/contenedor" sourceRef="_377AD866-AC66-4BE7-8E92-BB143222A2A9" targetRef="IntermediateCatchEvent_1"/>
     <bpmn2:sequenceFlow id="SequenceFlow_2" drools:priority="1" sourceRef="IntermediateCatchEvent_1" targetRef="_A94ADDAB-D7E5-4867-B4F6-E1F9B7248FC7"/>
     <bpmn2:intermediateCatchEvent id="IntermediateCatchEvent_2" name="Cargando">
       <bpmn2:extensionElements>
@@ -139,7 +139,7 @@
     <bpmn2:sequenceFlow id="SequenceFlow_3" drools:priority="1" name="Cargar item/contenedor" sourceRef="IntermediateCatchEvent_4" targetRef="IntermediateCatchEvent_2"/>
     <bpmn2:sequenceFlow id="SequenceFlow_4" drools:priority="1" sourceRef="IntermediateCatchEvent_2" targetRef="_A94ADDAB-D7E5-4867-B4F6-E1F9B7248FC7"/>
     <bpmn2:sequenceFlow id="SequenceFlow_5" drools:priority="1" name="Terminar carga/descarga" sourceRef="IntermediateCatchEvent_5" targetRef="IntermediateCatchEvent_3"/>
-    <bpmn2:sequenceFlow id="SequenceFlow_6" drools:priority="1" name="Cerrar item/contenedor" sourceRef="IntermediateCatchEvent_3" targetRef="_34BA8FDA-882C-4E3F-9DBC-949DA6D35BFB"/>
+    <bpmn2:sequenceFlow id="SequenceFlow_6" drools:priority="1" name="Cerrar unidad de transporte/contenedor" sourceRef="IntermediateCatchEvent_3" targetRef="_34BA8FDA-882C-4E3F-9DBC-949DA6D35BFB"/>
     <bpmn2:sequenceFlow id="SequenceFlow_7" drools:priority="1" name="Descargar item/contenedor" sourceRef="IntermediateCatchEvent_6" targetRef="IntermediateCatchEvent_7"/>
     <bpmn2:sequenceFlow id="SequenceFlow_8" drools:priority="1" sourceRef="IntermediateCatchEvent_7" targetRef="_A94ADDAB-D7E5-4867-B4F6-E1F9B7248FC7"/>
   </bpmn2:process>
@@ -251,7 +251,7 @@
         <di:waypoint xsi:type="dc:Point" x="275.0" y="190.0"/>
         <di:waypoint xsi:type="dc:Point" x="422.0" y="190.0"/>
         <bpmndi:BPMNLabel>
-          <dc:Bounds height="45.0" width="62.0" x="286.0" y="191.0"/>
+          <dc:Bounds height="60.0" width="65.0" x="284.0" y="191.0"/>
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="BPMNEdge_SequenceFlow_2" bpmnElement="SequenceFlow_2" sourceElement="BPMNShape_IntermediateCatchEvent_1" targetElement="_AY2_JQr5Eea8w_tYD8nfbQ">
@@ -289,7 +289,7 @@
         <di:waypoint xsi:type="dc:Point" x="150.0" y="475.0"/>
         <di:waypoint xsi:type="dc:Point" x="150.0" y="400.0"/>
         <bpmndi:BPMNLabel>
-          <dc:Bounds height="30.0" width="65.0" x="118.0" y="476.0"/>
+          <dc:Bounds height="60.0" width="65.0" x="118.0" y="476.0"/>
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="BPMNEdge_SequenceFlow_7" bpmnElement="SequenceFlow_7" sourceElement="BPMNShape_IntermediateCatchEvent_6" targetElement="BPMNShape_IntermediateCatchEvent_7">
